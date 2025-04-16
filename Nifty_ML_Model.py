@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-df = pd.read_csv(r"C:\Users\smssu\Desktop\arjjun\NFLX_minor.csv")
+df = pd.read_csv("NFLX_minor.csv")
 print(df.head())
 df['Date'] = pd.to_datetime(df['Date'])
 df.sort_values('Date', inplace=True)
